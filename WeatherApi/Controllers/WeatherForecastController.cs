@@ -19,6 +19,10 @@ public class WeatherForecastController : ControllerBase
     {
         "New Moon", "Half Moon", "Full Moon", "Crescent"
     };
+    private static readonly string[] WindStatus = new[]
+    {
+        "Calm", "Breezy", "Windy", "Gale"
+    };
     private readonly ILogger<WeatherForecastController> _logger;
 
     public WeatherForecastController(ILogger<WeatherForecastController> logger)
