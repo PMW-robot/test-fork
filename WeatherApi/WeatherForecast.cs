@@ -10,7 +10,7 @@ public class WeatherForecast
 
     public string? Summary { get; set; }
     
-    public string? Notes2 { get; set; }
+    public string? Notes1 { get; set; }
 }
 
 
