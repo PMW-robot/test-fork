@@ -10,7 +10,18 @@ public class WeatherForecastController : ControllerBase
     {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
-
+    private static readonly string[] SunStatus = new[]
+    {
+        "Rasiing", "Setting", "High Noon", "Midnight"
+    };
+    private static readonly string[] MoonStatus = new[]
+    {
+        "New Moon", "Half Moon", "Full Moon", "Crescent"
+    };
+    private static readonly string[] WindStatus = new[]
+    {
+        "Calm", "Breezy", "Windy", "Gale"
+    };
     private readonly ILogger<WeatherForecastController> _logger;
 
     public WeatherForecastController(ILogger<WeatherForecastController> logger)
